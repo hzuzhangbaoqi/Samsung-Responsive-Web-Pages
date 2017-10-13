@@ -1,0 +1,57 @@
+.promotion_icon{
+	background-image: url('../img/index/sp-gnb-pc.png');
+	background-repeat: no-repeat;
+}
+.Sam_ad_header{
+	height: 50px;
+	width: 100%;
+	background: #efefef;
+	/*line-height: 50px;*/
+	border-bottom:1px solid #dadada;
+}
+.Sam_ad_header_inner{
+	position: relative;
+	padding: 10px 0 8px;
+	margin: 0 auto;
+	text-align: center;
+}
+@media screen and (max-width: 768px) {
+	.Sam_ad_header_inner{
+		padding: 10px 12px 8px;
+		font-size: 12px;
+	}
+}
+.text_cen{
+	line-height: 30px;
+	display: inline-block;
+	font-weight: bold;
+	color: #363636;
+	font-size: 14px;
+	text-transform: none;
+}
+.text_cen a,.text_cen span{
+	font-size: 14px;
+	margin-right: 10px;
+	margin-top: -3px;
+	text-decoration: none;
+}
+.text_cen a span.ico_right{
+	display: inline-block;
+	width: 7px;
+	height: 11px;
+	vertical-align: middle;
+	background-position:-80px -42px;
+}
+.header_right{
+	line-height: 30px;
+}
+.header_right .cls_ban{
+	width: 15px;
+	height: 15px;
+	display: inline-block;
+	/*background-size: cover;*/
+	background-position: -104px -58px;
+	vertical-align: middle;
+	margin-left: 10px;
+	margin-top: -3px;
+}
