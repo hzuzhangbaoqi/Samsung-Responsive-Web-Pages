@@ -426,7 +426,7 @@ ul.research li a{
 .drop_phone ul.drop_list_t{
 	border-bottom: 1px solid #DADADA;
 }
-.drop_phone ul.drop_list_t li >a{
+.drop_phone ul.drop_list_t li .fa{
 	font-weight: bold;
 	font-size: 14px;
 	line-height: 24px;
@@ -455,8 +455,86 @@ ul.research li a{
 	color: #000;
 	text-decoration: none;
 }
+.drop_phone ul.drop_list_t li >div.drop_list_phone{
+	position: absolute;
+	top: 0px;
+	left: 0;
+	width: 100%;
+	/*border-bottom: 1px solid #DADADA;*/
+	background-color: #fff;
+	overflow-x: hidden;	
+	z-index: 11112;
+}
+.drop_phone ul.drop_list_t li >div.drop_list_phone div.drop_list_back a{
+	font-weight: bold;
+	font-size: 14px;
+	line-height: 24px;
+	text-transform: uppercase;
+	display: block;
+	position: relative;
+	padding: 14px 0;
+	padding-left: 24px;
+	padding-right: 35px;
+	color: #000;
+	text-decoration: none;
+}
+.drop_phone ul.drop_list_t li >div.drop_list_phone ul li > a{
+	/*font-weight: bold;*/
+	font-size: 14px;
+	line-height: 24px;
+	text-transform: uppercase;
+	display: block;
+	position: relative;
+	padding: 14px 0;
+	padding-left: 24px;
+	padding-right: 35px;
+	color: #000;
+	text-decoration: none;
+}
+.drop_phone ul.drop_list_t li >div.drop_list_phone ul li > a.titie{
+	font-weight: bold;
+}
 /*手机header结束*/
 /*nav结束*/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
