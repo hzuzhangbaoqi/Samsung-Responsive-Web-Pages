@@ -56,6 +56,11 @@ body,html{
 	margin: 0 auto;
 	text-align: center;
 }
+@media screen and (max-width:768px) {
+	.Sam_ad p{
+	padding: 0;
+}
+}
 .Sam_ad p span{
 	display: inline-block;
 	font-weight: bold;
@@ -72,8 +77,13 @@ body,html{
 	font-weight: bold;
 	line-height: 30px;
 	font-size: 14px;
-	text-decoration: none!important;
-	
+	text-decoration: none!important;	
+}
+@media screen and (max-width: 768px) {
+	.Sam_ad p a{
+	margin-left: 8px;
+	display: block;
+}
 }
 .icon_right{
 	margin-left: 5px;
@@ -411,7 +421,10 @@ ul.research li a{
 	height: 20px;
 	background-size: 130px auto;
 	background-position: -86px -41px;
-	/*background-color: red;*/
+	position: absolute;
+	top: 50%;
+	transform: translateY(-50%);
+	right: 25px;
 }
 .drop_phone{
 	position: absolute;
@@ -494,6 +507,20 @@ ul.research li a{
 .drop_phone ul.drop_list_t li >div.drop_list_phone ul li > a.titie{
 	font-weight: bold;
 }
+
+
+
+/*右边搜搜按钮功能实现开始*/
+
+/*右边搜搜按钮功能实现结束*/
+
+
+
+
+
+
+
+
 /*手机header结束*/
 /*nav结束*/
 
