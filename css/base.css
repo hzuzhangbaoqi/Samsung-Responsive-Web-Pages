@@ -41,11 +41,11 @@ a{
 img{
 	display: block;
 }
-[class^=icon]{
+/*[class^=icon]{
 	background-image: url('../images/jd-sprites.png') ;
 	background-repeat:no-repeat;	
 	background-size:200px 200px;
-}
+}*/
 .br{
 	border-right:1px solid #e0e0e0;
 }
@@ -66,4 +66,7 @@ img{
 	overflow: hidden;
 	text-overflow: ellipsis;
 	white-space: nowrap;
+}
+.pd{
+	padding: 0;
 }
