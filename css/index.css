@@ -225,7 +225,7 @@ ul.research li a{
 	background-position: -34px -22px;
 	background-size: 160px auto;
 	vertical-align: middle;
-	margin-bottom: -;
+	/*margin-bottom: -;*/
 	
 }
 /*电脑版下拉板块开始*/
@@ -245,6 +245,7 @@ ul.research li a{
 	opacity: 1;
 	transition-property: opacity,opacity;
 	transition-duration: 1ms,1ms;
+	/*transition: 0.5s ease-in-out;*/
 }
 /*.drop-desktop_inner{
 	margin: 0 auto;
@@ -387,7 +388,7 @@ ul.research li a{
 	height: 65px;
 	position: relative;
 	background-color: #FFFFFF;
-	border-bottom: 1px solid #DADADA;
+	/*border-bottom: 1px solid #DADADA;*/
 }
 .Sam_nav .gb_phone .gb_logo{
 	display: inline-block;
@@ -514,7 +515,183 @@ ul.research li a{
 
 /*右边搜搜按钮功能实现结束*/
 
+/*商品展示开始*/
+section.shop_one_wrap{
+	width: 100%;
+	display: block;
+	position: relative;
 
+}
+section.shop_one_wrap img{
+	width: 100%;
+}
+section.shop_one_wrap .shop_one_pc_btn{
+	position: absolute;
+	right: 11vw;
+	top: 50%;
+	margin-top: 17%;
+}
+
+section.shop_one_wrap .shop_one_pc_btn a{
+	position: relative;
+	display: inline-block;
+	border: 2px solid #000;
+	border-radius: 5px;
+	text-align: center;
+	text-decoration: none;
+	background-color: transparent;
+	font-weight: bold;
+	transition: 0.5s ease-in-out;
+	transition-property:background-color, border-color, color;
+	line-height: 1;
+	font-size: 13px;
+	letter-spacing: 0.1em;
+	white-space: normal;
+	text-transform: uppercase;
+	color: #000;
+	padding: 12px 25px 11px;
+	cursor: pointer;
+}
+section.shop_one_wrap .shop_one_pc_btn a:hover{
+	color: #fff;
+	border-color: #5f5f5f;
+	background-color: #5F5F5F;
+	transition: 0.5s ease-in-out;
+}
+section.shop_one_wrap .shop_one_pc_btn a:nth-of-type(1){
+	margin-right: 30px;
+}
+section.shop_one_wrap .shop_one_phone{
+	margin-top: -20px;
+}
+section.shop_one_wrap .shop_one_phone_btn{
+	position: absolute;
+	left: 50%;
+	transform: translateX(-50%);
+	right: 0;
+	top: 88%;
+	margin-left: 0;
+	margin-right: 0;
+	width: 100%;
+	text-align: center;
+}
+section.shop_one_wrap .shop_one_phone_btn a{
+	display: inline-block;
+	border:2px solid #000;
+	border-radius: 5px;
+	font-weight: bold;
+	transition: 0.5s ease-in-out;
+	transition-property:background-color, border-color, color;
+	line-height: 1;
+	font-size: 13px;
+	letter-spacing: 0.1em;
+	white-space: normal;
+	text-transform: uppercase;
+	color: #000;
+	padding: 2.8vw 3.33vw 2.5vw;
+	margin: 0;
+	font-size: 3.056vw;
+	text-decoration: none;
+	text-align: center;
+}
+section.shop_one_wrap .shop_one_phone_btn a:nth-of-type(1){
+	margin-right: 30px;
+}
+section.shop_one_wrap .shop_one_phone_btn a:hover{
+	color: #fff;
+	border-color: #5f5f5f;
+	background-color: #5F5F5F;
+	transition: 0.5s ease-in-out;
+}
+
+
+/*第二大部分*/
+section.shop_two_wrap{
+	width: 100%;
+	display: block;
+	position: relative;
+}
+section.shop_two_wrap img{
+	display: block;
+	width: 100%;
+}
+section.shop_two_wrap .shop_two_pc_btn{
+	position: absolute;
+	right: 10vw;
+	top: 70%;
+	/*margin-top: 17%;*/
+}
+section.shop_two_wrap .shop_two_pc_btn a{
+	position: relative;
+	display: block;
+	border: 2px solid #000;
+	border-radius: 5px;
+	text-align: center;
+	text-decoration: none;
+	background-color: rgba(255,255,255,0.2);
+	font-weight: bold;
+	transition: 0.5s ease-in-out;
+	transition-property:background-color, border-color, color;
+	line-height: 1;
+	font-size: 13px;
+	letter-spacing: 0.1em;
+	white-space: normal;
+	text-transform: uppercase;
+	color: #000;
+	padding: 12px 25px 11px;
+	cursor: pointer;
+	margin: 10px auto 0;
+	width: 200px;
+}
+section.shop_two_wrap .shop_two_pc_btn a:hover{
+	color: #fff;
+	border-color: #5f5f5f;
+	background-color: #5F5F5F;
+	transition: 0.5s ease-in-out;
+}
+
+section.shop_two_wrap .shop_two_phone_btn{
+	position: absolute;
+	top: 75%;
+	left: 0;
+	right: 0;
+	padding: 0;
+	margin-top: 0;
+	padding-bottom: 8vw;
+	width: 100%;
+	text-align: center!important;
+	height: 32vw;
+}
+section.shop_two_wrap .shop_two_phone_btn a{
+	display: block;
+	border:2px solid #000;
+	border-radius: 5px;
+	font-weight: bold;
+	transition: 0.5s ease-in-out;
+	transition-property:background-color, border-color, color;
+	line-height: 1;
+	font-size: 13px;
+	letter-spacing: 0.1em;
+	white-space: normal;
+	text-transform: uppercase;
+	color: #000;
+	padding: 2vw 3vw 2vw;
+	margin: 0;
+	font-size: 3.056vw;
+	text-decoration: none;
+	text-align: center;
+	width:200px;
+	margin:6px auto;
+}
+section.shop_two_wrap .shop_two_phone_btn a:hover{
+	color: #fff;
+	border-color: #5f5f5f;
+	background-color: #5F5F5F;
+	transition: 0.5s ease-in-out;
+}
+
+
+/*商品展示结束*/
 
 
 
