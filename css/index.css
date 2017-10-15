@@ -174,7 +174,6 @@ ul.gb_nav_main li>a{
 ul.gb_nav_main li a:hover{
 	color: #1428A0;
 }
-
 ul.gb_sub_nav{
 	height: 64px;
 	margin-bottom: 0;
@@ -287,8 +286,7 @@ ul.research li a{
 .drop-desktop .Img_Section a{
 	width: 100%;
 	height: 100%;
-	display: inline-block;
-	
+	display: inline-block;	
 }
 .drop-desktop .Img_Section img{
 	width: 100%;
@@ -370,7 +368,7 @@ ul.research li a{
 .gb_phone_left,.gb_phone_right{
 	line-height: 64px;	
 }
-.gb_phone_left .sp-gnb-phone{
+.gb_phone_left .phone_nav_logo{
 	vertical-align: middle;
 	display: inline-block;
 	width: 25px;
@@ -403,6 +401,8 @@ ul.research li a{
 	background-color: #fff;
 	overflow-x: hidden;	
 	z-index: 11111;
+	transform: translateX(-100%);
+	transition: all 0.5s;
 }
 .drop_phone ul.drop_list_t{
 	border-bottom: 1px solid #DADADA;
@@ -757,6 +757,11 @@ section.shop_three_wrap .superweek a:hover{
 }
 section.shop_three_wrap .phone_superweek{
 	text-align: center;
+	height: 240px;
+	/*position: absolute;
+	top: 200px;
+	left: 10%;
+	transform: translateX(-50%);*/
 }
 section.shop_three_wrap .phone_superweek strong{
 	display: block;
