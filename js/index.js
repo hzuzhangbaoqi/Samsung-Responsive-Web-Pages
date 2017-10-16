@@ -28,44 +28,40 @@ $(document).ready(function(){
     		var startY =0 ;
     		var moveEndX=0 ;
     		var moveEndY =0;
+    		var distanceX=0;
+    		var distanceY=0;
     		/*左滑关闭功能实现*/
     			$("body").on("touchstart",function(e){
-    				e.preventDefault();
+    				/*e.preventDefault();*/
     				startX=e.originalEvent.changedTouches[0].pageX;
     				startY=e.originalEvent.changedTouches[0].pageY;
-    				/*console.log("startX"+startX);
-    				console.log("startY"+startY);*/
     			});
     			
     			$('body').on("touchmove",function(e){
     				moveEndX=e.originalEvent.changedTouches[0].pageX;
 					moveEndY=e.originalEvent.changedTouches[0].pageY;
-					/*console.log("moveEndX"+moveEndX);
-    				console.log("moveEndY"+moveEndY);*/
-    				X=moveEndX-startX;
-    				Y=moveEndX-startX;
+    				distanceX=moveEndX-startX;
+    				distanceY=moveEndY-startY;
     				
-    				/*if(X>0){
-    					alert("你在右滑");
-    				}
-    				if(X<0){
-    					alert("你在左滑");
-    				}
-    				if(Y<0){
-    					alert("你在下滑");
-    				}
-    				if(Y>0){
-    					alert("你在上滑");
-    				}*/
+    			});
+    			
+    			
+    			$('body').on("touchend",function(e){
+    				if(Math.abs(distanceX) > Math.abs(distanceY) && distanceX < 0){
+    					$('.drop_phone').css("transform","translateX(-100%)");
+			    		flag=0;
+			    		$('.phone_nav_logo').css({"background-size":"130px auto","background-position":"0px -21px"});
+			    		$('.mask').css('display','none');
+    				}	
     				
     				
-    				if(Math.abs(X)>Math.abs(Y)&&>0){
-    					alert("")
-    				}
-    				
-    				
-    				
-    			})
+    				startX =0 ;
+		    		startY =0 ;
+		    		moveEndX=0 ;
+	    			moveEndY =0;
+		    		distanceX=0;
+		    		distanceY=0;
+    			});
     		/*左滑关闭功能实现*/
     		
     	}
@@ -89,10 +85,4 @@ $(document).ready(function(){
     	/*$(this).children().eq(1).css("display","block");*/
     })
 
-    
-    
-    
-    
-    
-    
 })
