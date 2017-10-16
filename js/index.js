@@ -23,6 +23,51 @@ $(document).ready(function(){
     		flag=1;
     		$(this).css({"background-size":"160px auto","background-position":"-65px -27px"});
     		$('.mask').css('display','block');
+    		
+    		var startX =0 ;
+    		var startY =0 ;
+    		var moveEndX=0 ;
+    		var moveEndY =0;
+    		/*左滑关闭功能实现*/
+    			$("body").on("touchstart",function(e){
+    				e.preventDefault();
+    				startX=e.originalEvent.changedTouches[0].pageX;
+    				startY=e.originalEvent.changedTouches[0].pageY;
+    				/*console.log("startX"+startX);
+    				console.log("startY"+startY);*/
+    			});
+    			
+    			$('body').on("touchmove",function(e){
+    				moveEndX=e.originalEvent.changedTouches[0].pageX;
+					moveEndY=e.originalEvent.changedTouches[0].pageY;
+					/*console.log("moveEndX"+moveEndX);
+    				console.log("moveEndY"+moveEndY);*/
+    				X=moveEndX-startX;
+    				Y=moveEndX-startX;
+    				
+    				/*if(X>0){
+    					alert("你在右滑");
+    				}
+    				if(X<0){
+    					alert("你在左滑");
+    				}
+    				if(Y<0){
+    					alert("你在下滑");
+    				}
+    				if(Y>0){
+    					alert("你在上滑");
+    				}*/
+    				
+    				
+    				if(Math.abs(X)>Math.abs(Y)&&>0){
+    					alert("")
+    				}
+    				
+    				
+    				
+    			})
+    		/*左滑关闭功能实现*/
+    		
     	}
     	else if(flag==1){
     		$('.drop_phone').css("transform","translateX(-100%)");
@@ -33,15 +78,17 @@ $(document).ready(function(){
     })
     
     $('.drop_list_t>li').click(function(){
-    	/*$(this).parent().css("display","none");*/
     	$(this).children().eq(1).css("display","block");
-    	
     })
     
-   /*$('.drop_list_t>li').click(function(){
-    	$(this).children().eq(1).children().eq(0).css("display","none");
-    })*/
     
+    $('.drop_list_t .drop_list_back').click(function(){
+    	$(this.parentNode).hide();
+    	$(this.parentNode.parentNode.parentNode.parentNode).css("display","block");
+    	
+    	/*$(this).children().eq(1).css("display","block");*/
+    })
+
     
     
     
